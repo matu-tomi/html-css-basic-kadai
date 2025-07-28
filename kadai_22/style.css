@@ -1,0 +1,78 @@
+body{
+    font-size: 20px;
+}
+
+header{
+    margin-bottom: 20px;
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+}
+
+h1,p{
+    display: inline-block;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+main{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+
+#parent{
+    display: flex;
+    flex-basis:25%;
+    justify-content: space-around;
+}
+.contents{
+    border: solid 3px rgb( 238, 204, 204);
+}
+.flexbox-container{
+    display: flex;
+    padding: 10px 15px;
+    margin: 20px 0;
+    text-align: center;
+}
+h2{
+    font-size: 25px;
+    border: dashed 3px rgb(236, 122, 122)
+}
+h2::before{
+    content:"●";
+    color: rgb( 239, 111, 139);
+}
+.contents :nth-of-type(2){
+    padding: 70%;
+    margin: 10px 0;
+}
+
+.contents p::first-letter{
+    color: rgb(97, 206, 249);
+    font-weight: bold;
+}
+footer{
+    background-color: rgb(244, 79, 79);
+    justify-content: center;
+}
+a{
+    color: ( 255, 255, 255);
+}
+a:valid{
+    color: rgb(193, 234, 251);
+}
+a:hover{
+    color: rgb(245, 178, 168);
+}
+@media screen and(max-width:768px){
+    h2{
+        font-size: 24px;
+    }
+    p{
+        font-size: 25px;
+    }
+    parent{
+        align-items: center;
+    }
+}
